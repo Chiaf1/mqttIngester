@@ -1,6 +1,12 @@
 # MQTT Ingester
 MQTT Ingester is a lightweight Go service designed to subscribe to one or more MQTT topics, buffer incoming messages, and process them asynchronously through a worker pool.
+
 The project provides a clean separation between configuration loading, MQTT communication, and message ingestion logic.
+
+This repository is intended to serve as a **base project** for future MQTT ingestion applications.  
+The core logic is complete and production-ready, while the message processing logic included here is only a **placeholder**, meant to be replaced or extended depending on the needs of each specific project.
+
+The intended way to use this project is to keep the core structure as-is and implement your own ingestion logic by modifying the handlers inside the ingestion module.
 
 ## Features
 - Loads configuration from a YAML file, with automatic defaults and validation.
